@@ -1,0 +1,69 @@
+.implement__container{
+    margin-top: 150px;
+    max-width: 1015px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 184px;
+}
+.implement__content{
+    max-width: 445px;
+}
+.implement__img{
+    border: 5px;
+}
+.implement__title{
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    color: $primary-color;
+    padding-bottom: 24px;
+}
+.implement__text{
+    font-family: 'Public Sans';
+    font-weight: 400;
+    font-size: $primary-size;
+    line-height: 28px;
+    color: #6C8294;
+}
+
+//responsive
+
+@media screen and (max-width:1347px) {
+    .implement__container{
+        margin-left: 40px;
+    }
+}
+@media screen and (max-width:1060px) {
+    .implement__container{
+        flex-direction: column;
+        text-align: center;
+        margin: 100px auto;
+    }
+    .implement__block{
+        margin-bottom: 48px;
+    }
+    .implement__content{
+        max-width: 573px;
+    }
+}
+@media screen and (max-width:768px) {
+    .implement__img{
+        width: 391px;
+        height: 250px;
+    }
+}
+@media screen and (max-width:575px) {
+    .implement__container{
+        margin-top: 80px;
+    }
+    .implement__img{
+        width: 328px;
+        height: 209px;
+    }
+    .implement__title{
+        font-size: 36px;
+        line-height: 36px;
+    }
+}

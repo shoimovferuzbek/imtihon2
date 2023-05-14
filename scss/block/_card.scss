@@ -1,0 +1,68 @@
+.card__container{
+    max-width: 1130px;
+    margin-top: 146px;
+}
+.card__list{
+    display: flex;
+    gap: 41px;
+}
+.card__item{
+    text-align: center;
+}
+.card__title{
+    font-family: 'Public Sans';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: $primary-color;
+    margin-bottom: 16px;
+}
+.card__item::before{
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../../img/finances.svg);
+    width: 106px;
+    height: 106px;
+    margin-bottom: 32px;
+}
+.card__item::before:nth-child(2){
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../../img/coverage.svg);
+    width: 106px;
+    height: 106px;
+    margin-bottom: 32px;
+}
+.card__item::before:nth-child(3){
+    content: "";
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url(../../img/payments.svg);
+    width: 106px;
+    height: 106px;
+    margin-bottom: 32px;
+}
+.card__text{
+    font-family: 'Public Sans';
+    font-weight: 400;
+    font-size: $primary-size;
+    line-height: 25px;
+    color:#6C8294;
+}
+
+//responsive
+
+@media screen and (max-width:670px) {
+    .card__list{
+        flex-direction: column;
+    }
+    .card__list{
+        max-width:328px;
+        margin: auto;
+    }
+    .card__container{
+        text-align: center;
+    }
+}

@@ -1,0 +1,113 @@
+.about__container{
+    max-width: 1520px;
+    margin-top: 75px;
+    background-color:#1B262F;
+    padding: 100px 205px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.about__img{
+    position: absolute;
+    margin-top: -50px;
+    margin-left: -205px;
+}
+.about__content{
+    max-width: 445px;
+}
+.about__title{
+    font-family: 'DM Serif Display';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    padding-bottom: 24px;
+    color:#FBFCFE;
+}
+.about__text{
+    font-family: 'Public Sans';
+    font-weight: 400;
+    font-size: $primary-size;
+    line-height: 28px;
+    padding-bottom: 32px;
+    color: #FBFCFE;
+}
+.about__btn{
+    width: 129px;
+    height: 48px;
+    border: 1px solid #FBFCFE;
+    border-radius: 30px;
+    font-family: 'Public Sans';
+    font-weight: 700;
+    font-size: $primary-size;
+    line-height: 17px;
+    color: #FBFCFE;
+    background-color: inherit;
+}
+.about__btn:hover{
+    background-color:#FBFCFE;
+    color: #1B262F;
+}
+.about__list{
+    max-width: 536px;
+    display: grid;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: 150px 160px 155px;
+    grid-template-rows: 70px 70px;
+}
+
+
+//responsive
+
+@media screen and (max-width: 1347px) {
+    .about__container{
+        padding: 80px 65px;
+    }
+    .about__img{       
+        margin-top: -11px;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .about__container{
+        padding: 65px 25px;
+    }
+    .about__img{       
+        display: none;
+    }
+    .about__container{
+        flex-direction: column-reverse;
+    }
+    .about__block{
+       margin: 60px auto;
+    }
+    .about__content{
+        text-align: center;
+    }
+}
+
+@media screen and (max-with:768px) {
+    .about__block{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:570px) {
+    .about__title{
+        font-size: 32px;
+        line-height: 36px;
+        padding-bottom: 16px;
+    }
+    .about__text{
+        padding-bottom: 60px;
+    }
+    .about__block{
+        margin: 50px auto;
+    }
+    .about__list{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 140px 148px;
+        gap: 30px;
+    }
+}
